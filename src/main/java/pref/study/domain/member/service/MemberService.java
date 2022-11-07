@@ -42,4 +42,8 @@ public class MemberService {
         return new MemberResponse(saveNewMember(request));
     }
 
+
+    public MemberListResponse modifyMember() {
+        return null;
+    }
 }

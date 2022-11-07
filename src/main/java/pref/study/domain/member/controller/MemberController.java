@@ -40,4 +40,14 @@ public class MemberController {
         CommonResponse response = new CommonResponse(true, result);
         return ResponseEntity.status(HttpStatus.OK).body(response);
     }
+
+    /**
+     * 수정
+     */
+    @PostMapping(value = "/modify-member")
+    public ResponseEntity<CommonResponse> modifyMember(){
+        MemberListResponse result = memberService.modifyMember();
+        CommonResponse response = new CommonResponse(true, result);
+        return ResponseEntity.status(HttpStatus.OK).body(response);
+    }
 }
