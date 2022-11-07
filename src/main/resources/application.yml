@@ -1,0 +1,5 @@
+# 공통 부분 작성
+
+spring:
+  profiles:
+    active: local
